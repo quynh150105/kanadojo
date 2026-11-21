@@ -93,6 +93,7 @@ function render() {
   const bad = deck.filter((c) => ratings.get(c[0]) === false).length;
   $("right").textContent = good;
   $("wrong").textContent = bad;
+  $("previous").disabled = pos === 0;
   if (pos >= deck.length) {
     $("practice").classList.add("hidden");
     $("complete").classList.remove("hidden");
@@ -168,6 +169,7 @@ $("card").addEventListener("pointercancel", cancelSwipe);
 $("card").addEventListener("lostpointercapture", cancelSwipe);
 $("correct").addEventListener("click", () => answer(true));
 $("incorrect").addEventListener("click", () => answer(false));
+$("previous").addEventListener("click", previousCard);
 $("next").addEventListener("click", nextCard);
 $("restart").addEventListener("click", () => start());
 $("mode").addEventListener("change", () => start());

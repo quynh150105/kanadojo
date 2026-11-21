@@ -93,6 +93,10 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 button:focus-visible,
 select:focus-visible,
 .flashcard:focus-visible {
@@ -227,13 +231,6 @@ select:focus-visible,
 .actions button {
   min-height: 53px;
 }
-.below {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 .note {
   margin-top: 24px;
   padding: 16px;
@@ -280,11 +277,5 @@ select:focus-visible,
   }
   .actions button {
     padding: 12px 8px;
-  }
-  .below {
-    flex-direction: column;
-  }
-  .below button {
-    width: 100%;
   }
 }
