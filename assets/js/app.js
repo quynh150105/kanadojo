@@ -127,6 +127,11 @@ function nextCard() {
   pos++;
   render();
 }
+function previousCard() {
+  if (pos <= 0 || pos >= deck.length) return;
+  pos--;
+  render();
+}
 function answer(ok) {
   if (pos >= deck.length) return;
   ratings.set(deck[pos][0], ok);
@@ -152,7 +157,8 @@ $("card").addEventListener("pointerup", (e) => {
   swipeStart = null;
   if (Math.abs(dx) >= 50 && Math.abs(dx) > Math.abs(dy)) {
     suppressCardClick = true;
-    nextCard();
+    if (dx < 0) previousCard();
+    else nextCard();
   }
 });
 function cancelSwipe(e) {

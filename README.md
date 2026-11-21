@@ -13,7 +13,8 @@ tests/flashcards.test.cjs    Kiểm tra tự động
 Chế độ **A → N** đi từ あ (a) đến ん (n); **N → A** đi theo thứ tự ngược.
 Nút **Bắt đầu lại** giữ thứ tự của chế độ đang chọn. Các chế độ còn lại xáo trộn thẻ.
 
-Vuốt thẻ sang trái/phải trên điện thoại hoặc kéo bằng chuột để qua từ mà không đánh dấu.
+Vuốt trái để quay lại từ trước, vuốt phải để sang từ tiếp theo.
+Thao tác này dùng được trên điện thoại hoặc kéo bằng chuột, không thay đổi đánh dấu.
 Chạm thẻ để lật; cuộn dọc vẫn dùng bình thường.
 
 Đánh dấu **Đã nhớ / Chưa nhớ** được giữ khi xáo trộn, bắt đầu lại hoặc đổi chế độ,
